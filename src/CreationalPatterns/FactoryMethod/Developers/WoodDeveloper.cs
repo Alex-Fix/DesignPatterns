@@ -1,6 +1,6 @@
-﻿using FactoryMethod.Products;
+﻿using FactoryMethod.Houses;
 
-namespace FactoryMethod.Creators;
+namespace FactoryMethod.Developers;
 
 internal class WoodDeveloper : Developer
 {

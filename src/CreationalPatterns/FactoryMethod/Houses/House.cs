@@ -1,4 +1,4 @@
-﻿namespace FactoryMethod.Products;
+﻿namespace FactoryMethod.Houses;
 
 internal abstract class House
 {
