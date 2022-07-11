@@ -6,4 +6,4 @@
 
 * When the specific type of the object being created should be determined dynamically at runtime
 * When it is undesirable to create a separate factory class hierarchy to create product objects from a parallel class hierarchy (as is done, for example, when using the Abstract Factory pattern)
-* When cloning an object is preferable to creating it and initializing it with a constructor. Especially when it is known that an object can take on a small, limited number of possible states.
+* When cloning an object is preferable to creating it and initializing it with a constructor. Especially when it is known that an object can take on a small, limited number of possible states
