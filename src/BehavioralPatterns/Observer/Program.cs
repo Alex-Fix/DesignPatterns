@@ -1,13 +1,16 @@
 ﻿using Observer.Observables;
 using Observer.Observers;
 
-Stock stock = new();
+IObserver observerA = new ConcreteObserver("Observer A");
+IObserver observerB = new ConcreteObserver("Observer B");
 
-Bank bank = new("FixBank", stock);
-Broker broker = new("Alex", stock);
+IObservable observable = new ConcreteObservable();
 
-stock.Market();
+observable.AddObserver(observerA);
+observable.AddObserver(observerB);
 
-broker.StockTrade();
+observable.NotifyObservers();
 
-stock.Market();
+observable.RemoveObserver(observerA);
+
+observable.NotifyObservers();

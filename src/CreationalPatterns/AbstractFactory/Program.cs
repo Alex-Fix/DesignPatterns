@@ -1,9 +1,12 @@
-﻿using AbstractFactory.Factories;
+﻿using F = AbstractFactory.Factories;
 
-Hero elf = new Hero(new ElfFactory());
-elf.Move();
-elf.Hit();
+F.AbstractFactory factory;
+Client client;
 
-Hero warior = new Hero(new WariorFactory());
-warior.Move();
-warior.Hit();
+factory = new F.ConcreteFactory1();
+client = new Client(factory);
+client.Run();
+
+factory = new F.ConcreteFactory2();
+client = new Client(factory);
+client.Run();

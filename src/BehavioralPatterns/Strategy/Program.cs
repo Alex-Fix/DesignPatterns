@@ -1,10 +1,10 @@
 ﻿using Strategy;
-using Strategy.Movables;
+using Strategy.Strategies;
 
-var car = new Car();
+Context context = new();
 
-car.Movable = new PetrolMove();
-car.Move();
+context.ContextStrategy = new ConcreteStrategy1();
+context.ExecuteAlgorithm();
 
-car.Movable = new ElectricMove();
-car.Move();
+context.ContextStrategy = new ConcreteStrategy2();
+context.ExecuteAlgorithm();

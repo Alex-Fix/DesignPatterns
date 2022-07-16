@@ -1,15 +1,10 @@
-﻿using Builder.Builders;
-using Builder.Ingredients;
+﻿using Builder;
+using B = Builder.Builders;
 
-BreadBuilder breadBuilder;
-Bread bread;
+B.Builder builder = new B.ConcreteBuilder();
 
-var baker = new Baker();
+Director director = new(builder);
+director.Construct();
 
-breadBuilder = new WheatBreadBuilder();
-bread = baker.Bake(breadBuilder);
-Console.WriteLine(bread);
-
-breadBuilder = new RyeBreadBuilder();
-bread = baker.Bake(breadBuilder);
-Console.WriteLine(bread);
+Product product = builder.GetResult();
+Console.WriteLine(product);

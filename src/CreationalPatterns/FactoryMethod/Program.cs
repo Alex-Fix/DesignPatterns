@@ -1,13 +1,13 @@
-﻿using FactoryMethod.Developers;
-using FactoryMethod.Houses;
+﻿using FactoryMethod.Creators;
+using FactoryMethod.Products;
 
-Developer developer;
-House house;
+Product product;
+Creator creator;
 
-developer = new WoodDeveloper("Alex Corporation");
-house = developer.Create();
-Console.WriteLine(house.Message);
+creator = new ConcreteCreatorA();
+product = creator.FactoryMethod();
+Console.WriteLine(product.GetType().FullName);
 
-developer = new PanelDeveloper("Fix Corporation");
-house = developer.Create();
-Console.WriteLine(house.Message);
+creator = new ConcreteCreatorB();
+product = creator.FactoryMethod();
+Console.WriteLine(product.GetType().FullName);

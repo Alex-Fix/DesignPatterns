@@ -1,9 +1,9 @@
 ﻿internal class Singleton
 {
       private static Singleton _instance = null!;
-      private static object _syncRoot = new object();
+      private static object _syncRoot = new();
 
-      internal int RandomValue { get; set; } = new Random(Guid.NewGuid().ToByteArray().Sum(b => (int)b)).Next();
+      internal int RandomValue { get; set; } = new Random(Guid.NewGuid().ToByteArray().Sum(b => b)).Next();
 
       internal static Singleton GetInstance()
       {
@@ -11,7 +11,7 @@
             {
                   lock (_syncRoot)
                   {
-                        _instance = new Singleton();
+                        _instance = new();
                   }
             }
 
