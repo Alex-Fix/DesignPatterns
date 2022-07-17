@@ -1,8 +1,9 @@
-﻿# State
+﻿# Iterator
 
-> The state pattern is a behavioral software design pattern that allows an object to alter its behavior when its internal state changes. This pattern is close to the concept of finite-state machines. The state pattern can be interpreted as a strategy pattern, which is able to switch a strategy through invocations of methods defined in the pattern's interface.
+> In object-oriented programming, the iterator pattern is a design pattern in which an iterator is used to traverse a container and access the container's elements. The iterator pattern decouples algorithms from containers; in some cases, algorithms are necessarily container-specific and thus cannot be decoupled.
 
 ## Use cases
 
-* When an object's behavior should depend on its state and can change dynamically at runtime
-* When multiple conditional constructs are used in the code of object methods, the choice of which depends on the current state of the object
+* When it is necessary to bypass an object without revealing its internal structure
+* When there is a set of composite objects, and it is necessary to provide a single interface for iterating over them
+* When it is necessary to provide several alternative iterations of the same object
