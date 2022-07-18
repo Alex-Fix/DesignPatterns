@@ -45,6 +45,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StructuralPatterns", "Struc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "src\StructuralPatterns\Decorator\Decorator.csproj", "{C73960C7-54DB-4A37-960D-D7DF60C41D8F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "src\StructuralPatterns\Adapter\Adapter.csproj", "{B256E250-2257-4CD6-A8D0-8F5AD1A76A2E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -119,6 +121,10 @@ Global
 		{C73960C7-54DB-4A37-960D-D7DF60C41D8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C73960C7-54DB-4A37-960D-D7DF60C41D8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C73960C7-54DB-4A37-960D-D7DF60C41D8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B256E250-2257-4CD6-A8D0-8F5AD1A76A2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B256E250-2257-4CD6-A8D0-8F5AD1A76A2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B256E250-2257-4CD6-A8D0-8F5AD1A76A2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B256E250-2257-4CD6-A8D0-8F5AD1A76A2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -144,6 +150,7 @@ Global
 		{4B01E653-7C98-4A70-ABC7-7A9ECBB12035} = {5C043BB5-60CA-4446-B3CB-9DC8E77F8D31}
 		{896A524F-C486-470D-8FBB-44DF1D2571AB} = {27CF79C1-DD7C-4A24-B134-E4406CF3E85B}
 		{C73960C7-54DB-4A37-960D-D7DF60C41D8F} = {896A524F-C486-470D-8FBB-44DF1D2571AB}
+		{B256E250-2257-4CD6-A8D0-8F5AD1A76A2E} = {896A524F-C486-470D-8FBB-44DF1D2571AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {38D68136-254D-4D0E-8CAF-1121952DA51F}
