@@ -1,0 +1,10 @@
+﻿# Proxy
+
+> In computer programming, the proxy pattern is a software design pattern. A proxy, in its most general form, is a class functioning as an interface to something else. The proxy could interface to anything: a network connection, a large object in memory, a file, or some other resource that is expensive or impossible to duplicate. In short, a proxy is a wrapper or agent object that is being called by the client to access the real serving object behind the scenes. Use of the proxy can simply be forwarding to the real object, or can provide additional logic. In the proxy, extra functionality can be provided, for example caching when operations on the real object are resource intensive, or checking preconditions before operations on the real object are invoked. For the client, usage of a proxy object is similar to using the real object, because both implement the same interface.
+
+## Use cases
+
+* When it is necessary to communicate over the network, and the request object must imitate the behavior of an object in a different address space. The use of a proxy allows you to reduce overhead costs when transferring data through the network. This situation is also called a remote proxy (remote proxies)
+* When you need to control access to a resource that is expensive to create. The real object is created only when it can really be needed, and before that, all requests to it are processed by the proxy object. This situation is also called a virtual proxy (virtual proxies)
+* When it is necessary to restrict access to the called object depending on the rights of the calling object. This situation is also called protection proxies.
+* When you need to count references to an object or ensure thread-safe work with a real object. This situation is called "smart links" (smart reference)
